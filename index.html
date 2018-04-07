@@ -1,1 +1,19 @@
-<html><head><style></style></head><body><h1>this is cool</h1></body></html>
+<html>
+  <head>
+    <style></style>
+    <script src="bower_components/instafeed.js/instafeed.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>this is cool</h1>
+    <div id="instafeed"></div>
+
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'lucakonfirmation',
+            clientId: '6a664e07edb743348d8be364d728bed'
+        });
+        feed.run();
+    </script>
+  </body>
+</html>
